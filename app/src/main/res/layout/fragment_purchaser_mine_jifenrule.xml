@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_15_dip"
+            android:background="@drawable/bg_jifen_kuang"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10_dip" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="当前可用积分"
+                    android:textColor="#323232"
+                    android:textSize="@dimen/dimen_13_sp" />
+
+                <TextView
+                    android:id="@+id/tv_jifen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="50分"
+                    android:textColor="#ffe48c"
+                    android:textSize="@dimen/dimen_13_sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_5_dip"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:layout_marginRight="@dimen/dimen_10_dip"
+                android:src="@drawable/shape_gray_dotted_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10_dip"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:textSize="@dimen/dimen_11_sp"
+                    android:text="用户积分是凸显身份的一种象征，积分越多所体现其用户身份月尊贵，其所享受的优惠更多。" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="@dimen/dimen_150_dip"
+            android:layout_height="@dimen/dimen_45_dip"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:background="@drawable/bg_yellow"
+            android:gravity="center"
+            android:text="积分规则"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_12_sp" />
+
+        <com.cnmobi.exianmall.widget.MyListView
+            android:id="@+id/lv_rule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_15_dip"
+            android:divider="@null" />
+    </LinearLayout>
+
+</ScrollView>

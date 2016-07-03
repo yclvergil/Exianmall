@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ly_online_leavemessage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/dimen_16_dip"
+            android:layout_height="@dimen/dimen_16_dip"
+            android:src="@drawable/ic_message_16x16" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16_dip"
+            android:gravity="center"
+            android:text="在线留言"
+            android:textColor="#999999"
+            android:textSize="@dimen/dimen_11_sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_1_dip"
+        android:background="#F0F0F0" />
+
+    <LinearLayout
+        android:id="@+id/ly_call"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:gravity="center" >
+
+        <ImageView
+            android:layout_width="@dimen/dimen_16_dip"
+            android:layout_height="@dimen/dimen_16_dip"
+            android:src="@drawable/ic_call_16x16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_16_dip"
+            android:gravity="center"
+            android:text="拨打电话"
+            android:textColor="#999999"
+            android:textSize="@dimen/dimen_11_sp" />
+    </LinearLayout>
+
+</LinearLayout>

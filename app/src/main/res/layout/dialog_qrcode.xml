@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_10_dip" >
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/ic_close" />
+
+    <ImageView
+        android:id="@+id/iv_qrcode"
+        android:layout_width="@dimen/dimen_200_dip"
+        android:layout_height="@dimen/dimen_200_dip"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dimen_10_dip" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10_dip"
+        android:background="@drawable/radiobg_select"
+        android:text="保存到手机"
+        android:textColor="@color/orange" />
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rll"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_18_dip"
+            android:gravity="center_horizontal"
+            android:text="您的留言我们会尽快回复您的..."
+            android:textColor="@color/graytext" />
+
+        <ScrollView
+            android:id="@+id/sv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.cnmobi.exianmall.widget.MyListView
+                android:id="@+id/lv_history_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_15_dip"
+                android:divider="#00000000"
+                android:dividerHeight="0dip" />
+
+            <!--
+                     <LinearLayout
+                    android:id="@+id/ll_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical" />
+            -->
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:focusable="true"
+            android:hint="  请留言..." />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="@dimen/dimen_64_dip"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="发送"
+            android:textColor="#323232"
+            android:textSize="@dimen/dimen_12_sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

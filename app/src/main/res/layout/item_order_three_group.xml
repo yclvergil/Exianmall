@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_5_dip"
+    android:paddingLeft="@dimen/dimen_3_dip"
+    android:paddingRight="@dimen/dimen_3_dip" >
+
+    <RelativeLayout
+        android:id="@+id/rv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="订单号：225555"
+            android:textColor="@color/graytext"
+            android:textSize="@dimen/dimen_9_sp" />
+
+        <TextView
+            android:id="@+id/tv_creattime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_title"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="@dimen/dimen_13_dip"
+            android:text="2016-02-02"
+            android:textColor="@color/graytext"
+            android:textSize="@dimen/dimen_9_sp" />
+
+        <ImageView
+            android:id="@+id/iv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_30_dip"
+            android:layout_toRightOf="@id/tv_title"
+            android:src="@drawable/iv_yellow_edit" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/iv_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_up" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1_dip"
+            android:layout_margin="@dimen/dimen_10_dip"
+            android:background="@color/gray" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <com.cnmobi.exianmall.widget.MyListView
+                    android:id="@+id/lv_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:scrollbars="none" >
+                </com.cnmobi.exianmall.widget.MyListView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

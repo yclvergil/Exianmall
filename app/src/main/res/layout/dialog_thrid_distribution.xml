@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dimen_25_dip"
+        android:text="免责声明：选择第三方噢诶是，到货时间以第三方为准！建议选择平台物流配送，谢谢！"
+        android:textColor="#323232"
+        android:textSize="@dimen/dimen_11_sp" />
+
+   
+    
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1_dip"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:background="#F0F0F0" />
+
+    <TextView
+        android:id="@+id/tv_i_know"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_centerHorizontal="true"
+        android:text="我知道了"
+        android:padding="@dimen/dimen_10_dip"
+        android:textColor="#e8a12e"
+        android:textSize="@dimen/dimen_11_sp" />  
+
+</RelativeLayout>

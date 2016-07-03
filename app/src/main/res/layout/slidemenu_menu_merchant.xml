@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_300_dip"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.4"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ly_slidemenu_mine_merchant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical" >
+
+            <com.cnmobi.exianmall.widget.RoundImageView
+                android:id="@+id/iv_heads"
+                android:layout_width="@dimen/dimen_100_dip"
+                android:layout_height="@dimen/dimen_100_dip"
+                android:layout_marginLeft="@dimen/dimen_24_dip"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_10_dip"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_stallsname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_8_dip"
+                    android:text="e鲜商城"
+                    android:textColor="@color/yellow_text_slidemenu"
+                    android:textSize="@dimen/dimen_11_sp" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1868****432"
+                    android:textColor="@color/green_text"
+                    android:textSize="@dimen/dimen_11_sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_24_dip"
+        android:paddingRight="@dimen/dimen_24_dip"
+        android:weightSum="7"
+         >
+
+        <RelativeLayout
+            android:id="@+id/rl_slidemenu_message_merchant"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView3_3"
+                android:layout_width="@dimen/dimen_24_dip"
+                android:layout_height="@dimen/dimen_24_dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/slidmenu_message" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_toRightOf="@+id/imageView3_3"
+                android:text="消息"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_10_sp" />
+
+            <ImageView
+                android:id="@+id/iv_slidemenu_red_point"
+                android:layout_width="@dimen/dimen_10_dip"
+                android:layout_height="@dimen/dimen_10_dip"
+                android:layout_alignTop="@+id/imageView3_3"
+                android:layout_toRightOf="@+id/imageView3_3"
+                android:src="@drawable/ic_red_point" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_slidemenu_history_order_merchant"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView3_4"
+                android:layout_width="@dimen/dimen_24_dip"
+                android:layout_height="@dimen/dimen_24_dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/slidmenu_history_order" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_toRightOf="@+id/imageView3_4"
+                android:text="历史订单"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_10_sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_slidemenu_adress_manage_merchant"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView3_5"
+                android:layout_width="@dimen/dimen_24_dip"
+                android:layout_height="@dimen/dimen_24_dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_slidmenu_address" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_toRightOf="@+id/imageView3_5"
+                android:text="地址管理"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_10_sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_slidemenu_adress_production_merchant"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView3_7"
+                android:layout_width="@dimen/dimen_24_dip"
+                android:layout_height="@dimen/dimen_24_dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_slidmenu_production_adress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_toRightOf="@+id/imageView3_7"
+                android:text="产地"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_10_sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_slidemenu_set_merchant"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView3_6"
+                android:layout_width="@dimen/dimen_24_dip"
+                android:layout_height="@dimen/dimen_24_dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/slidmenu_set" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:layout_toRightOf="@+id/imageView3_6"
+                android:text="设置"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_10_sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

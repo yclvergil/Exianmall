@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hui"
+    android:paddingBottom="@dimen/dimen_60_dip" >
+
+    <com.cnmobi.exianmall.widget.SwipeListView
+        android:id="@+id/ly_merchant_adressmanage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#ffffff"
+        android:dividerHeight="0dp" >
+    </com.cnmobi.exianmall.widget.SwipeListView>
+
+    <Button
+        android:id="@+id/btn_add_production_adress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        android:background="@drawable/bg_wanshang"
+        android:text="新增产地地址"
+       android:textSize="@dimen/dimen_10_sp"
+        android:textColor="#e8a12e" />
+
+</RelativeLayout>

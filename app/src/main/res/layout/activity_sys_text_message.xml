@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_15_dip" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_msgtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:textColor="#323232"
+                    android:textSize="@dimen/dimen_11_sp" />
+
+                <TextView
+                    android:id="@+id/tv_releasetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_msgtitle"
+                    android:layout_marginTop="@dimen/dimen_20_dip"
+                    android:textSize="@dimen/dimen_8_sp"
+                    android:textColor="@color/graytext" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1_dip"
+                    android:layout_below="@+id/tv_releasetime"
+                    android:layout_marginTop="@dimen/dimen_15_dip"
+                    android:background="#F0F0F0" />
+
+                <TextView
+                    android:id="@+id/tv_msgcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view1"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/graytext"
+                    android:textSize="@dimen/dimen_10_sp"
+                    android:layout_marginTop="@dimen/dimen_5_dip"/>
+                
+            </RelativeLayout>
+
+            <com.cnmobi.exianmall.widget.MyListView
+                android:id="@+id/ly_msgcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#00000000"
+                android:dividerHeight="0dip" >
+            </com.cnmobi.exianmall.widget.MyListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

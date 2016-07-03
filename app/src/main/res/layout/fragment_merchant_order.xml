@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:background="@color/danhuang"
+        android:paddingBottom="@dimen/dimen_8_dip"
+        android:paddingLeft="@dimen/dimen_15_dip"
+        android:paddingRight="@dimen/dimen_15_dip"
+        android:paddingTop="@dimen/dimen_8_dip" >
+
+        <ImageView
+            android:id="@+id/iv_home_left_top"
+            android:layout_width="@dimen/dimen_45_dip"
+            android:layout_height="@dimen/dimen_45_dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_240_dip"
+            android:layout_height="@dimen/dimen_45_dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_order_big_slider"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_order_wait_payment"
+                android:layout_width="@dimen/dimen_120_dip"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:background="@drawable/bg_order_smal_slider"
+                android:gravity="center"
+                android:text="未结算"
+                android:textColor="@color/danhuang"
+                android:textSize="@dimen/dimen_11_sp" />
+
+            <TextView
+                android:id="@+id/tv_order_wait_send"
+                android:layout_width="@dimen/dimen_120_dip"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:gravity="center"
+                android:text="待发货"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_11_sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_home_right_top1"
+            android:layout_width="@dimen/dimen_28_dip"
+            android:layout_height="@dimen/dimen_28_dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_mine_message" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/danhuang"
+        android:dividerHeight="@dimen/dimen_2_dip" />
+
+    <ListView
+        android:id="@+id/lv_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/danhuang"
+        android:dividerHeight="@dimen/dimen_2_dip"
+        android:visibility="gone" />
+
+</LinearLayout>

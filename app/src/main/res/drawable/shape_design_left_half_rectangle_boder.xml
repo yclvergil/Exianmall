@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+     android:shape="rectangle"
+      android:useLevel="false">
+      <!-- 内容的填充的颜色 -->
+      <solid android:color="@android:color/transparent"/>
+      <!-- 设置矩形的四个角为弧形 
+      topLeft设置右上角半径
+      topRight设置左上角半径-->
+      <corners
+        android:radius="@dimen/dimen_9_dip"
+        />
+	<!-- 边框 -->
+	<stroke
+    android:width="@dimen/dimen_1_dip"
+    android:color="#DBDBDC"
+   	></stroke>     
+
+</shape>

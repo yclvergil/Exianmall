@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_car_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="@dimen/dimen_10_dip"
+        android:layout_marginRight="@dimen/dimen_10_dip"
+         android:layout_marginTop="@dimen/dimen_10_dip" >
+
+        <CheckBox
+            android:id="@+id/item_checkbox"
+            style="@style/ShopCarCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center" 
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="@dimen/dimen_24_dip"
+            android:layout_height="@dimen/dimen_24_dip"
+            android:layout_toRightOf="@id/item_checkbox"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_dangao" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imageView4"
+            android:gravity="center_vertical"
+            android:text=" e鲜商城"
+            android:textSize="@dimen/dimen_11_sp" />
+
+        <ImageView
+            android:id="@+id/item_shopcar_tv_sendouttime"
+            android:layout_width="@dimen/dimen_32_dip"
+            android:layout_height="@dimen/dimen_32_dip"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_riqi" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_sendouttime_urgent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10_dip"
+        android:layout_marginRight="@dimen/dimen_10_dip"
+        android:layout_marginBottom="@dimen/dimen_5_dip"
+        android:layout_marginTop="@dimen/dimen_5_dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/dimen_24_dip"
+            android:layout_height="@dimen/dimen_24_dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:src="@drawable/ic_urgent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="紧急到货时间"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_10_sp" />
+
+        <TextView
+            android:id="@+id/tv_sendouttime_urgent"
+            android:layout_width="@dimen/dimen_230_dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:background="@drawable/shape_rectangle_arrivetime_black"
+            android:gravity="center"
+            android:padding="@dimen/dimen_3_dip"
+            android:textColor="@color/graytext"
+             android:textSize="@dimen/dimen_8_sp"/>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:background="@drawable/shape_rectangle_arrivetime_black"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_3_dip"
+            android:paddingLeft="@dimen/dimen_5_dip"
+            android:paddingRight="@dimen/dimen_5_dip"
+            android:paddingTop="@dimen/dimen_3_dip"
+            android:text="取消"
+            android:textColor="@color/graytext"
+            android:textSize="@dimen/dimen_8_sp" />
+    </LinearLayout>
+	<View  
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/dimen_2_dip"
+	    android:background="@color/danhuang"
+	    android:layout_marginTop="@dimen/dimen_5_dip"
+	    android:visibility="gone"/>
+    <com.cnmobi.exianmall.widget.SwipeListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:divider="@null"
+        />
+
+</LinearLayout>

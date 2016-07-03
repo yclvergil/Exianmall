@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_head_4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_15_dip"
+        android:background="@drawable/bg_jifen_kuang"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10_dip" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="我有优惠券"
+                android:textColor="#323232"
+                android:textSize="@dimen/dimen_13_sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="10张"
+                android:textColor="#ffe48c"
+                android:textSize="@dimen/dimen_13_sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_5_dip"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:src="@drawable/shape_gray_dotted_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10_dip"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="优惠券是“e鲜”平台通过买赠，活动参与，积分兑换等形式发放给用户，用于减免购买支付的回馈用户措施。"
+                android:textSize="@dimen/dimen_7_sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.cnmobi.exianmall.widget.MyListView
+        android:id="@+id/lv_coupon_exchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10_dip"
+        android:divider="#00000000"
+        android:dividerHeight="0dip" >
+    </com.cnmobi.exianmall.widget.MyListView>
+
+</LinearLayout>

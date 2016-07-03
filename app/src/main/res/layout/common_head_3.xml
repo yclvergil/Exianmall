@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_60_dip"
+    android:background="@color/danhuang" >
+
+    <LinearLayout
+        android:id="@+id/ly_common_head_3_return"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_10_dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/dimen_28_dip"
+            android:layout_height="@dimen/dimen_28_dip"
+            android:src="@drawable/ic_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_24_dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly_big_bg"
+        android:layout_width="@dimen/dimen_240_dip"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_order_big_slider"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_common_head_3_lefttitle"
+            android:layout_width="@dimen/dimen_120_dip"
+            android:layout_height="@dimen/dimen_45_dip"
+            android:background="@drawable/bg_order_smal_slider"
+            android:gravity="center"
+            android:text="积分规则"
+            android:textColor="@color/danhuang"
+            android:textSize="@dimen/dimen_11_sp" />
+
+        <TextView
+            android:id="@+id/tv_common_head_3_righttitle"
+            android:layout_width="@dimen/dimen_120_dip"
+            android:layout_height="@dimen/dimen_45_dip"
+            android:gravity="center"
+            android:text="积分兑换"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_11_sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_common_head_3_details"
+        android:layout_width="@dimen/dimen_28_dip"
+        android:layout_height="@dimen/dimen_28_dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_7_sp"
+        android:src="@drawable/ic_details" />
+
+</RelativeLayout>

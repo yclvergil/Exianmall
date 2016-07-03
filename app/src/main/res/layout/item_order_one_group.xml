@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="#FFFFFF"
+     android:descendantFocusability="blocksDescendants"
+     android:paddingLeft="@dimen/dimen_12_dip"
+     android:paddingRight="@dimen/dimen_12_dip"
+     android:paddingBottom="@dimen/dimen_12_dip">
+    
+
+    <RelativeLayout
+        android:id="@+id/rv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="订单号：225555 2015-05-14"
+            android:textColor="@color/graytext"
+            android:textSize="@dimen/dimen_9_sp" />
+        
+
+        <TextView
+            android:id="@+id/tv_creattime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_title"
+            android:layout_below="@id/tv_title"
+            android:text="2016-02-02"
+            android:layout_marginTop="@dimen/dimen_13_dip"
+            android:textColor="@color/graytext"
+            android:textSize="@dimen/dimen_9_sp" />
+        
+        <TextView
+            android:id="@+id/tv_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_toLeftOf="@id/iv_flag"
+            android:text="已发货"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/dimen_8_sp" />
+        <ImageView
+            android:id="@+id/iv_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_up" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/ly_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <com.cnmobi.exianmall.widget.MyListView
+            android:id="@+id/lv_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@null"
+            android:scrollbars="none" >
+        </com.cnmobi.exianmall.widget.MyListView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="@dimen/dimen_5_dip">
+
+        <TextView
+            android:id="@+id/tv_xiaoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="小计："
+            android:textColor="@color/graytext"
+            android:textSize="@dimen/dimen_9_sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:layout_toRightOf="@id/tv_xiaoji"
+            android:text="共10框"
+            android:textSize="@dimen/dimen_9_sp"
+             android:visibility="gone"  />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:layout_toRightOf="@id/tv_count"
+            android:text="$199.00元"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/dimen_10_sp" />
+
+        
+         <Button
+            android:id="@+id/item_order_one_group_btn_cancelorder"
+            android:layout_width="@dimen/dimen_110_dip"
+            android:layout_height="@dimen/dimen_35_dip"
+            android:layout_toLeftOf="@+id/item_order_one_group_btn_paynow"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:background="@drawable/bg_yellow"
+            android:text="取消订单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_10_sp" />
+         
+         
+        <Button
+            android:id="@+id/item_order_one_group_btn_paynow"
+            android:layout_width="@dimen/dimen_110_dip"
+            android:layout_height="@dimen/dimen_35_dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_yellow"
+            android:text="马上付款"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_10_sp" />
+    </RelativeLayout>
+</LinearLayout>

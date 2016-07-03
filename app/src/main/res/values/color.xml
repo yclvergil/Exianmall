@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <color name="yellow_hint">#FFF299</color>
+    <color name="guide_text">#B7A315</color>
+    <color name="danhuang">#FDE000</color>
+    <color name="yellow_text_slidemenu">#E39109</color>
+    <color name="yellow_text">#FAD86A</color>
+    <color name="green_text">#16723D</color>
+    <color name="gray">#E9E9E9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="orange">#E8A12E</color>
+    <color name="hui">#F4F4F4</color>
+    <color name="dark">#32323C</color>
+    <color name="bgorange">#ffe48c</color>
+    <color name="yzmorange">#e8a12e</color>
+    <color name="graytext">#999999</color>
+    <color name="yellow">#FEC91B</color>
+    <color name="green">#1DB35F</color>
+    <color name="lucency">#00000000</color>
+    <color name="text_hui">#B8B8B8</color>
+    <color name="mtranslucent">#30000000</color>
+    <color name="transparent_background">#000000</color>
+    <color name="date_1">#F24949</color>
+    <color name="date_2">#40000000</color>
+
+</resources>

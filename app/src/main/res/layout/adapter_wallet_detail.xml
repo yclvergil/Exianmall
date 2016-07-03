@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_100_dip"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dimen_15_dip"
+    android:paddingRight="@dimen/dimen_15_dip" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_wallet_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购物送积分"
+                android:textColor="#323232"
+                android:textSize="@dimen/dimen_11_sp" />
+
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_dates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_7_dip" >
+
+            <TextView
+                android:id="@+id/tv_wallet_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2015-12-07"
+                android:textColor="#999999"
+                android:textSize="@dimen/dimen_10_sp" />
+
+        </LinearLayout>
+
+       
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_wallet_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="+10"
+        android:textColor="#ffe48c"
+        android:textSize="@dimen/dimen_17_sp" />
+ 	<View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1_dip"
+            android:background="#F0F0F0" 
+           	android:layout_alignParentBottom="true"
+           	android:layout_marginBottom="@dimen/dimen_2_dip"/>
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hui" 
+    android:paddingBottom="@dimen/dimen_60_dip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:background="#ffffff"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:text="收货人姓名 "
+                android:textColor="#323232"
+                android:textSize="@dimen/dimen_9_sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_30_dip"
+                android:background="@null"
+                android:hint="(默认公司法人姓名)"
+                android:textColor="#323232"
+                android:textSize="@dimen/dimen_9_sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_alteradress_select"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:background="#ffffff" >
+
+            <TextView
+                android:id="@+id/tv_dq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:text="地区             "
+                android:textColor="#323232"
+                android:textSize="@dimen/dimen_9_sp" />
+
+            <TextView
+                android:id="@+id/tv_alter_selectadress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_30_dip"
+                android:layout_toRightOf="@+id/tv_dq"
+                android:textColor="#323232"
+                android:textSize="@dimen/dimen_9_sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/dimen_24_dip"
+                android:layout_height="@dimen/dimen_24_dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen_15_dip"
+                android:padding="@dimen/dimen_2_dip"
+                android:src="@drawable/right_black_arrows" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_60_dip"
+            android:background="#ffffff"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15_dip"
+                android:text="详细地址     "
+                android:textColor="#323232"
+                android:textSize="@dimen/dimen_9_sp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_30_dip"
+                android:background="@null"
+                android:textColor="#323232"
+                android:textSize="@dimen/dimen_9_sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_commit_add_adress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_wanshang"
+        android:text="提交申请"
+        android:textSize="@dimen/dimen_10_sp"
+         android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        android:textColor="#e8a12e" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_60_dip"
+    android:background="#ffe48c" >
+
+    <LinearLayout
+        android:id="@+id/ly_common_head_4_return"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_10_dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="@dimen/dimen_28_dip"
+            android:layout_height="@dimen/dimen_28_dip"
+            android:src="@drawable/ic_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="返回"
+            android:textColor="#e8a12e"
+            android:textSize="@dimen/dimen_8_sp" />
+    </LinearLayout>
+
+    
+
+
+        <TextView
+            android:id="@+id/tv_common_head_4_cententtitle"
+            android:layout_width="@dimen/dimen_150_dip"
+            android:layout_height="@dimen/dimen_45_dip"
+            android:background="@drawable/bg_jifen_normal"
+            android:gravity="center"
+            android:text="优惠券"
+            android:textColor="#e8a12e"
+            android:textSize="@dimen/dimen_11_sp" 
+            android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/iv_common_head_4_right"
+        android:layout_width="@dimen/dimen_28_dip"
+        android:layout_height="@dimen/dimen_28_dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_10_dip"
+        android:src="@drawable/ic_details" />
+
+</RelativeLayout>

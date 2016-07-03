@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/danhuang"
+        android:paddingBottom="@dimen/dimen_8_dip"
+        android:paddingLeft="@dimen/dimen_15_dip"
+        android:paddingRight="@dimen/dimen_15_dip"
+        android:paddingTop="@dimen/dimen_8_dip" >
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_300_dip"
+            android:layout_height="@dimen/dimen_45_dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_order_big_slider"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_order_wait_payment"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_order_smal_slider"
+                android:gravity="center"
+                android:text="待付款"
+                android:textColor="@color/danhuang"
+                android:textSize="@dimen/dimen_11_sp" />
+
+            <View
+                android:id="@+id/view_order_first_line"
+                android:layout_width="@dimen/dimen_2_dip"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_order_wait_receive"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="待收货"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_11_sp" />
+
+            <View
+                android:id="@+id/view_order_second_line"
+                android:layout_width="@dimen/dimen_2_dip"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_order_wait_grade"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="待评分"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen_11_sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_common_head_3_details"
+            android:layout_width="@dimen/dimen_32_dip"
+            android:layout_height="@dimen/dimen_32_dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:src="@drawable/iv_saoyisao" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_msg_pay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100_dip"
+        android:gravity="center"
+        android:text="暂无商品订单" 
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@color/danhuang"
+            android:dividerHeight="@dimen/dimen_2_dip" />
+
+        <ListView
+            android:id="@+id/lv_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:divider="@color/danhuang"
+            android:dividerHeight="@dimen/dimen_2_dip"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lv_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/danhuang"
+            android:dividerHeight="@dimen/dimen_2_dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

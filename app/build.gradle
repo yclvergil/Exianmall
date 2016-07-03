@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "demo.baidumapsdk.com.exianmall"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile files('libs/alipaySDK-20150610.jar')
+    compile files('libs/android-support-v4.jar')
+    compile files('libs/appmanagement.jar')
+    compile files('libs/core.jar')
+    compile files('libs/gson-2.2.4.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile files('libs/umeng-analytics-v6.0.1.jar')
+    compile files('libs/universal-image-loader-1.9.3.jar')
+    compile files('libs/xUtils-2.6.14.jar')
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+}

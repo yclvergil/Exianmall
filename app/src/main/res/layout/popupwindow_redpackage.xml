@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_redpackage_top1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bg_redpackage_top"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_redpackage_top_close1"
+        android:layout_width="@dimen/dimen_45_dip"
+        android:layout_height="@dimen/dimen_45_dip"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/dimen_15_dip"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_redpackage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_redpackage_top1"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/iv_redpackage_bottom1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_redpackage" />
+
+        <TextView
+            android:id="@+id/tv_redpackage_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_25_dip"
+            android:text="点击领取"
+            android:textColor="#fff100"
+            android:textSize="@dimen/dimen_11_sp" />
+
+        <TextView
+            android:id="@+id/tv_redpackage_content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingTop="@dimen/dimen_30_dip"
+            android:text="恭喜您预充值成功,获得\n一个随机红包！"
+            android:textColor="#fff100"
+            android:textSize="@dimen/dimen_11_sp" />
+
+        <TextView
+            android:id="@+id/tv_redpackage_bottom_close1"
+            android:layout_width="@dimen/dimen_45_dip"
+            android:layout_height="@dimen/dimen_45_dip"
+            android:layout_alignParentTop="true"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="@dimen/dimen_10_dip"/>
+    </RelativeLayout>
+
+</RelativeLayout>

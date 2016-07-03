@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:background="#ffffff"
+         >
+
+        <EditText
+            android:id="@+id/ed_mine_info_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请填写您的手机号码"
+            android:textColor="#323232"
+            android:textColorHint="#999999"
+            android:textSize="@dimen/dimen_10_sp" 
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_5_dip"
+            android:inputType="phone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

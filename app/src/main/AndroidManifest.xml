@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cnmobi.exianmall"
+    android:installLocation="auto"
+    android:versionCode="13"
+    android:versionName="1.5.3" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name="com.cnmobi.exianmall.base.MyApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/icon2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.cnmobi.exianmall.base.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.base.GuideActivity" >
+        </activity>
+        <!-- 登录注册 -->
+        <activity android:name="com.cnmobi.exianmall.register.activity.RegisterActivity" >
+        </activity>
+        <!-- 登录注册 -->
+        <activity android:name="com.cnmobi.exianmall.login.activity.LoginActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.register.activity.RegisterNextPageActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.register.activity.RegisterAgreementActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.login.activity.BackPasswordActivity" >
+        </activity>
+
+        <!-- 首页 -->
+        <activity android:name="com.cnmobi.exianmall.base.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx6744b24e07143069" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cnmobi.exianmall.home.activity.SearchActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.cnmobi.exianmall.home.activity.CaptureActivity" />
+        <!-- 我 -->
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineJiFenActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineJifenDetailActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineCouponActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineCouponRuleActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineWalletActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineWalletDetailActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineMessageActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineAdressManageActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineAlterAdressActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineSetActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.OnlineMessage" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mineset.activity.MineSetAboutActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mineset.activity.MineSetFeedBackActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mineset.activity.MineAlterLoginPasswordActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mineset.activity.MineAlterPayPasswordActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineInformationActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineInformationStallsActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineInformationNameActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineInformationPhoneNumberActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineOldOrderActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.PreChargeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx6744b24e07143069" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.PayBanActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mineset.activity.MineSetPayPasswordActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineMessageDetailActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.TextMessageActivity" >
+        </activity>
+
+        <!-- 分类  开始 -->
+
+        <activity android:name="com.cnmobi.exianmall.type.activity.ShowTypeActivity" />
+        <activity android:name="com.cnmobi.exianmall.type.activity.ProductPingJiaActivity" />
+        <activity android:name="com.cnmobi.exianmall.type.activity.ProductDetailActivity" />
+        <activity android:name="com.cnmobi.exianmall.type.activity.SingleOrderActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx6744b24e07143069" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.type.activity.ProductionShowActivity" />
+        <activity android:name="com.cnmobi.exianmall.type.activity.SendOutDateActivity" /> <!-- 配送时间 -->
+        <!-- 分类 结束 -->
+        <!-- 购物车开始 -->
+
+
+        <!-- 购物车结束 -->
+
+
+        <!-- 卖家 -->
+        <!-- 卖家-主页 -->
+        <activity android:name="com.cnmobi.exianmall.base.MainActivityMerchant" >
+        </activity>
+        <!-- 卖家-我 -->
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MerchantMineAdressManageActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MerchantMineAddAdressActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MerchantMineAlterAdressActivity" >
+        </activity>
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MerchantMineInformationActivity" />
+        <activity android:name="com.cnmobi.exianmall.mine.activity.MineProductionPlaceActivity" />
+        <activity android:name="com.cnmobi.exianmall.utils.SelectPictureActivity" />
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- alipay sdk end -->
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop" />
+
+        <receiver android:name="net.sourceforge.simcpux.AppRegister" >
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.cnmobi.exianmall.wxapi.PayActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wx6744b24e07143069" />
+            </intent-filter>
+        </activity>
+        <!-- 友盟统计 -->
+         <meta-data android:name="UMENG_APPKEY" android:value="574d4e63e0f55a85e5000d35" >
+        </meta-data>
+        <meta-data  android:name="UMENG_CHANNEL" android:value="Exian">
+        </meta-data>
+        
+    </application>
+
+</manifest>

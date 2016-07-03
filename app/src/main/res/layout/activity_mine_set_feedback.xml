@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_300_dip"
+        android:layout_margin="@dimen/dimen_15_dip"
+        android:background="@drawable/bg_feedback" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dimen_5_dip"
+            android:layout_marginRight="@dimen/dimen_5_dip"
+            android:gravity="center"
+            android:text="+300"
+            android:textColor="#999999"
+            android:textSize="@dimen/dimen_6_sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/et_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/textView1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/dimen_5_dip"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_marginRight="@dimen/dimen_10_dip"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:background="@null"
+            android:gravity="left|top"
+            android:hint="请在此处填写您的宝贵意见或建议，我们会尽快优化的哦"
+            android:textColor="#999999"
+            android:textSize="@dimen/dimen_8_sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_feedback_commit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60_dip"
+        android:layout_marginLeft="@dimen/dimen_15_dip"
+        android:layout_marginRight="@dimen/dimen_15_dip"
+        android:layout_marginTop="@dimen/dimen_120_dip"
+        android:background="@drawable/bg_wanshang"
+        android:text="提交"
+        android:textSize="@dimen/dimen_10_sp"
+        android:textColor="#e8a12e" />
+
+</LinearLayout>

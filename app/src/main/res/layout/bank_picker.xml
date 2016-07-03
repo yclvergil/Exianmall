@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:su="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal" >
+
+    <com.cnmobi.exianmall.widget.ScrollerNumberPicker
+        android:id="@+id/bank"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        su:itemNumber="7"
+        su:lineColor="#999999"
+        su:maskHight="@dimen/dimen_5_dip"
+        su:noEmpty="true"
+        su:normalTextColor="#999999"
+        su:normalTextSize="13sp"
+        su:selecredTextColor="#e8a12e"
+        su:selecredTextSize="15sp"
+        su:unitHight="30dp" />
+
+</LinearLayout>

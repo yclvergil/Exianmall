@@ -1,0 +1,53 @@
+<com.cnmobi.exianmall.widget.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/dimen_30_dip"
+        android:paddingLeft="@dimen/dimen_30_dip"
+        android:paddingTop="@dimen/dimen_50_dip" >
+
+        <include layout="@layout/slidemenu_menu" />
+    </RelativeLayout>
+
+    <com.cnmobi.exianmall.widget.MyRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffe48c"
+        android:fitsSystemWindows="true" >
+
+        <include layout="@layout/slidemenu_main" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:paddingBottom="@dimen/dimen_8_dip"
+            android:paddingLeft="@dimen/dimen_15_dip"
+            android:paddingRight="@dimen/dimen_15_dip"
+            android:paddingTop="@dimen/dimen_8_dip" >
+
+            <com.cnmobi.exianmall.widget.RoundImageView
+                android:id="@+id/m_iv"
+                android:layout_width="@dimen/dimen_45_dip"
+                android:layout_height="@dimen/dimen_45_dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/iv_main_red_point"
+                android:layout_width="@dimen/dimen_10_dip"
+                android:layout_height="@dimen/dimen_10_dip"
+                android:layout_alignTop="@+id/m_iv"
+                android:layout_marginLeft="-8dp"
+                android:layout_toRightOf="@+id/m_iv"
+                android:src="@drawable/ic_red_point" />
+        </RelativeLayout>
+    </com.cnmobi.exianmall.widget.MyRelativeLayout>
+
+</com.cnmobi.exianmall.widget.DragLayout>
